@@ -23,7 +23,7 @@ class ChromeValidation(unittest.TestCase):
     def test_trending_carousel(self):
         driver = self.driver
         try:
-            driver.find_element_by_xpath("//b[contains(text(),'Trending Today')]")
+            driver.find_element_by_xpath("//b[contains(text(),'Trending Now')]")
             driver.find_element_by_xpath("//div[@class='filter-trending region-filter']//input["
                                          "@class='country-filter']")
             driver.find_element_by_id("trending-inner")
